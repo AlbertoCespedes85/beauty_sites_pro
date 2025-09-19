@@ -1,16 +1,72 @@
-import React from 'react'
+import React from 'react';
 import { NavbarUser } from '../../components/NavbarUser';
+import { Col, Container, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router';
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
-    <NavbarUser/>
-    <main>
-      <h1>Hola Bienvenidos a Beauty Sites</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae iste itaque rem provident molestias ipsa iure non possimus distinctio deleniti eum labore nam atque accusamus voluptatum tempore animi maxime repudiandae, eveniet sequi voluptatibus odio minima. Vel doloribus molestias quisquam nostrum voluptates rerum inventore consequuntur? Quis totam blanditiis ipsam ab vero sit facilis iste voluptate, veritatis explicabo nesciunt doloremque culpa corporis, officiis maxime ea ut dolores ad laudantium sapiente? Dolorum, reprehenderit! Fugiat recusandae voluptatibus consequatur nihil delectus necessitatibus dolores nemo ab, eaque explicabo itaque. Hic quas adipisci laudantium amet blanditiis earum atque veniam obcaecati. Minus quisquam id saepe cupiditate, nihil similique eum dolor est iure officiis nobis eos nisi dolore pariatur voluptatem hic deleniti exercitationem quaerat unde. Laudantium architecto aliquid porro ipsa nulla tenetur voluptate non, iure dignissimos aut eligendi? Ratione excepturi delectus odio quam, praesentium ea error sunt cupiditate officia modi sit magnam asperiores ipsum numquam veritatis necessitatibus recusandae, id perspiciatis iure architecto sequi voluptatibus? Inventore accusantium animi maxime aliquam atque nisi ipsa, incidunt numquam quidem. Maiores aperiam sint neque nam, praesentium magnam. Eius, a commodi? Facilis quam, sapiente omnis, nesciunt voluptas modi obcaecati aperiam corporis error numquam eius quas saepe nemo, aliquam ex. Qui facilis doloremque obcaecati iure officia odit rerum vitae? Accusantium unde itaque, incidunt perferendis labore eveniet delectus officiis nulla quisquam reprehenderit impedit molestias neque! Inventore recusandae at quo, fugit, et doloremque earum incidunt ut suscipit reprehenderit nesciunt beatae temporibus quos veritatis modi ad ab? Nam ipsum repellat deleniti sit quia officia, voluptatum labore in voluptas dicta? Temporibus molestiae soluta laboriosam asperiores voluptas facilis. Sint tempora ad accusamus voluptate maxime assumenda aliquid, vel suscipit quaerat quasi iste, exercitationem aut numquam blanditiis, ullam distinctio adipisci ab explicabo laudantium? Tempora laborum hic quaerat natus aliquid ab ea error, non cumque recusandae dolor. Maxime laboriosam numquam non et qui quis! Quibusdam officia error sequi eligendi accusamus soluta quaerat exercitationem nisi perferendis? Cumque quisquam explicabo sequi ipsa. Delectus sit, expedita vero odit natus velit sapiente blanditiis iure dolores dignissimos assumenda corrupti consequuntur possimus harum voluptas! Facilis eos unde quas perferendis, natus magni aliquid placeat quo saepe consectetur temporibus nesciunt nam ad nulla a earum veritatis. Sunt perferendis ea quaerat, repudiandae, officiis magnam ab quibusdam repellendus vero dolore explicabo quae possimus ducimus corporis. Illum aliquam quam dolores. Eum deserunt suscipit itaque exercitationem tempore cupiditate impedit illo, nam sit? Assumenda veritatis cum illum inventore quas accusantium, vitae, voluptatibus aperiam ratione, enim nesciunt laboriosam suscipit maxime quod provident atque totam natus eius in voluptate repellat nisi mollitia adipisci? Omnis voluptates, nemo magnam eveniet nostrum eum impedit expedita in quasi optio veniam voluptate soluta, hic a cum libero explicabo assumenda corrupti provident nesciunt! Et esse tempore maiores fugit quia iure quis asperiores molestias? Laborum error reiciendis quo minima, esse dolor, veniam perspiciatis dolore voluptatem repellendus quod molestias. Reiciendis sed ratione odio sunt perferendis dignissimos sit. Non fugiat in laboriosam exercitationem voluptatem! Eum obcaecati labore totam rem quisquam magnam qui. Ad, unde cumque? Vero accusantium totam molestiae, a pariatur perferendis eaque veniam nam doloremque non.</p>
-    
-    </main>
+      <NavbarUser />
+      <main>
+        <Container>
+          <h1 className="title mb-4 mt-4">Webs que llenan tu agenda</h1>
+          <h2 className='text-center'>Especialistas en peluquería , estetica y clinicas de belleza</h2>
+          <Row>
+            <Col>
+              <img src="../images/webejm.png" alt="" />
+            </Col>
+            <Col>
+              <p className='mt-4'>
+                Haz que tu negocio brille en internet Creamos páginas web y
+                tiendas online para peluquerías y centros de imagen que quieren
+                atraer más clientes, mostrar sus servicios con estilo y crecer
+                con soluciones digitales fáciles de usar.
+              </p>
+              <p>
+                Diseñamos tu web, tienda online o sistema de reservas Sabemos lo
+                importante que es la primera impresión. Por eso, desarrollamos
+                páginas que reflejan la esencia de tu negocio, con diseño
+                moderno y funcionalidades que realmente necesitas:
+              </p>
+              <Row>
+                <Col md={6}>
+                    <div>
+                      <h5><img className='me-2' src="../images/ordenador.png" alt="" /> Webs atractivas y profesionales</h5>
+                      <p>Diseños profesionales que reflejan la esencia de tu salón</p>
+                    </div>
+                 </Col>
+                  <Col md={6}>
+                    <div>
+                      <h5><img className='me-2' src="../images/llega.png" alt="" />SEO local optimizado</h5>
+                      <p>Haz que te encuentren en Google y gana nuevas clientas</p>
+                    </div>
+                  </Col>
+                  <Col md={6}>
+                    <div>
+                      <h5><img className='me-2' src="../images/reserva.png" alt="" /> Reserva online conectadas a tu CRM</h5>
+                      <p>Tu agendá siempre al dia, sin duplicados</p>
+                    </div>
+                  </Col>
+                  <Col md={6}>
+                    <div>
+                      <h5><img className='me-2' src="../images/security.png" alt="" /> Mantenimiento y seguridad  </h5>
+                      <p>Actualizaciones , soporte y hosting incluido</p>
+                    </div>
+                  </Col>
+              </Row>
+                
+              
+              <div className="d-flex justify-content-end">
+                <button onClick={()=>navigate("/contact")} className="submitBtn position-sticky ">
+                  Quiero mi web ahora
+                </button>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </main>
     </>
-  )
-}
-export default Home ;
+  );
+};
+export default Home;

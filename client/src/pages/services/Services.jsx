@@ -1,13 +1,73 @@
 import React from 'react'
 import { NavbarUser } from '../../components/NavbarUser';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Services = () => {
   return (
     <>
     <NavbarUser/>
     <main>
-    <h1>Nuestros Servicios:</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ipsum alias quaerat fuga perferendis fugiat minima. Nisi, molestiae ea aspernatur quidem perferendis similique accusamus possimus eaque eum nemo reprehenderit natus sunt modi voluptatum tenetur laborum animi neque aliquam amet commodi ipsa qui excepturi praesentium atque? Illum perspiciatis minus facilis laudantium voluptates dolorum harum voluptas tempora optio, voluptatem accusantium eveniet nemo qui reprehenderit deserunt. Vel laboriosam sunt ad quibusdam soluta harum aut maiores quam quas commodi nisi inventore voluptates atque magnam nobis est odit nostrum, ipsa molestias necessitatibus! Rerum hic tenetur delectus a deleniti recusandae perferendis laboriosam natus, voluptatum vel. Perferendis facilis quidem praesentium vitae nam voluptas animi inventore ad dolores at debitis necessitatibus modi nihil, veniam sint sapiente, rem ut similique a magnam iusto quaerat eos! Quis unde perspiciatis odit, libero excepturi sit officiis quod iste sed harum dolorem numquam? Delectus amet nulla iure ipsa veritatis quas illo omnis quod odio, a hic esse quo libero voluptas deserunt accusamus aperiam eligendi odit sapiente voluptatem sed corrupti beatae architecto quasi. Eius dolorum alias enim, placeat pariatur nam rerum quidem debitis illum reprehenderit error veritatis nobis perferendis dolores ipsa omnis excepturi architecto hic sed quas nostrum ipsum dolorem libero. Illo, soluta voluptates.</p>
+    <Container>
+      <h1 className='title'>Nuestros Servicios:</h1>
+      <p className='text-center '>Elige el plan que mejor se adapta a tu salón: creación única o creación con mantenimiento incluido.
+      </p>
+      <Row className='mt-5'>
+        <Col >
+        <img width={70} src="../images/ordenador.png" alt="" />
+        <h3>Web Básica</h3>
+        <p>Presencia digital + galeria + contacto +enlace reservas</p>
+        </Col>
+        
+        <Col>
+         <img width={70} src="../images/rocket.png" alt="" />
+        <h3>Web Pro</h3>
+        <p>Todo lo anterior + SEO local optimizado</p>
+        </Col>
+        <Col>
+         <img width={70} src="../images/start.png" alt="" />
+        <h3>Web Premium</h3>
+        <p>Diseño avanzado + blog + formación de uso</p>
+        </Col>
+      </Row>
+      </Container>
+      <section className='text-center'>
+        <h3><img src="../images/lock.png" alt="" /> Mantenimiento mensual</h3>
+        <p>Hosting, seguridad ,actualizaciones</p>
+      </section>
+      <section>
+        <h3 className='text-center'>Servicios extras</h3>
+        <Container>
+          <Row>
+           
+              <Col md={6}>
+              <img src="../images/photo.png" alt="" />
+              <p>Fotografía profesional</p>
+              </Col>
+           
+              
+              <Col md={6}>
+              <img src="../images/gps.png" alt="" />
+              <p>Btanding y diseño gráfico</p>
+              </Col>
+            
+              <Col md={6}>
+              <img src="../images/pencil.png" alt="" />
+              <p>Copywriting especializado</p>
+              </Col>
+         
+              <Col md={6}>
+              <img src="../images/reserva.png" alt="" />
+              <p>Integración con redes sociales</p>
+              </Col>
+           
+           </Row>
+        </Container>
+      </section>
+      <h3 className='text-center'>Solicita tu presupuesto</h3>
+      <div className='d-flex justify-content-center mt-3'>
+        <button className='submitBtn '>Solicita tu presupuesto</button>
+        </div>
+    
     </main>
     </>
   )

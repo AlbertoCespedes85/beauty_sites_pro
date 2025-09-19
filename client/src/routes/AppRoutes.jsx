@@ -5,6 +5,7 @@ const Home = lazy(() => import("../pages/home/Home"))
 const About = lazy(()=> import ("../pages/about/About"))
 const Services = lazy(()=> import("../pages/services/Services"))
 const Portfolio = lazy(()=> import("../pages/portfolio/Portfolio"))
+const Contact = lazy(()=> import ("../pages/contacto/Contact"))
 
 export const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ export const AppRoutes = () => {
         <Route path= "/about" element={<About/>}/>
         <Route path= "/services" element={<Services/>}/>
         <Route path= "/portfolio" element={<Portfolio/>}/>
+        <Route path= "/contact" element={<Contact/>}/>
     </Routes>
     </BrowserRouter>
   )
