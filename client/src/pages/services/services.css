@@ -1,0 +1,36 @@
+.ofertas{
+  padding: 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  border: 2px solid #7190ac;
+  margin: 2rem;
+}
+.prize{
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color:white;
+  font-size: 2rem;
+}
+.falsebtn{
+  background-color: #cc4869;
+  border-radius: 1rem;
+}
+.banner {
+  background: linear-gradient(90deg, pink, hotpink);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: pulse 2s infinite;
+}
+
+/* animación suave de atención */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}

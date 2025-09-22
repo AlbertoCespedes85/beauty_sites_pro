@@ -1,4 +1,5 @@
 import './App.css'
+import { Footer } from './components/footer/Footer'
 import { AuthContextProvider } from './context/AuthContextProvider'
 import { AppRoutes } from './routes/AppRoutes'
 
@@ -9,6 +10,7 @@ function App() {
     <>
     <AuthContextProvider>
     <AppRoutes/>
+    <Footer/>
     </AuthContextProvider>
     </>
   )
